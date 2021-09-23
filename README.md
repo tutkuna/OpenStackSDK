@@ -37,8 +37,8 @@ Again, the description should be specific enough that you can determine whether 
 - The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors.
 - Some possible API Features we will be working on:
 
- - Managing/ Unmanaging Snapshots
-  - Use the Shared File Systems service to make snapshots of shares. A share snapshot is a point-in-time, read-only copy of the data that is contained in a share. The APIs below allow controlling share snapshots. They are represented by a “snapshot” resource in the Shared File Systems service, and they can have user-defined metadata such as a name and description.
+  - Managing/ Unmanaging Snapshots
+    - Use the Shared File Systems service to make snapshots of shares. A share snapshot is a point-in-time, read-only copy of the data that is contained in a share. The APIs below allow controlling share snapshots. They are represented by a “snapshot” resource in the Shared File Systems service, and they can have user-defined metadata such as a name and description.
 Users can create, manage, update, and delete share snapshots. Users can create a share from it, or can also revert a share to its most recent snapshot through OpenStack SDK.
  - Managing/ Unmanaging Shares
   - A share is a remote, mountable file system. In the APIs below, a share resource is a representation of this remote file system within the Shared File Systems service. This resource representation includes useful metadata, communicating the characteristics of the remote file system as determined by the user and the Shared File Systems service.
