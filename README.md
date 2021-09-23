@@ -1,6 +1,4 @@
 #  OpenStack Manila API v2 support in OpenStackSDK
-** **
-
 ## 1.   Vision and Goals Of The Project:
 - Implementing features of the Manila API to the OpenStack Python SDK to be ready for the OpenStack Yoga release cycle.
 
@@ -8,9 +6,6 @@
 - End-users of Manila
 - People that use OpenStack to develop their public cloud environment projects
 - 
-
-
-** **
 
 ## 3.   Scope and Features Of The Project:
 - The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors.
@@ -26,8 +21,6 @@ Users can create a share and associate it with a network, list shares, and show 
     - A share server is created by multi-tenant back-end drivers where shares are hosted. For example, with the generic driver, shares are hosted on Compute VMs.
 Administrators can perform read and delete actions for share servers. An administrator can delete an active share server only if it contains no dependent shares. If an administrator deletes the share server, the Shared File Systems service creates a share server in response to a subsequent create share request.
 
-** **
-
 ## 4. Solution Concept
 ![alt text](https://wiki.openstack.org/w/images/4/43/Shares_Service.png)
 - https://wiki.openstack.org/wiki/Manila 
@@ -41,5 +34,4 @@ Administrators can perform read and delete actions for share servers. An adminis
 - Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement.
 - Sprint 2: Starting work on implementing features we will have decided on in sprint 1.
 
-** **
 
