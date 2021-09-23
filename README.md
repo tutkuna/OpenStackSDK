@@ -13,7 +13,11 @@ Manila is an open source OpenStack Shared File System service that is a software
 ## 2. Users/Personas Of The Project:
 - End-users of Manila
 - People that use OpenStack to develop their public cloud environment projects
-- 
+- Some major companies using openStack: Adobe, American Express, Best buy, Bloomberg
+- Few services that can be achieved using manila are:
+  - **Database as a service**: With a database as a service model, application owners do not have to install and maintain the database themselves. Instead, the database service provider takes responsibility for installing and maintaining the database, and application owners are charged according to their usage of the service. It is similar to software as a service.
+  - **Big Data**: Through Manila’s HDFS native driver plugin, users can create a highly scalable, flexible, fast, and cost effective storage platform, because it can store and distribute very large data sets across hundreds of inexpensive servers that operate in parallel.
+  - **cross-tenant data sharing**: a tenant is a group of users sharing common access to a software instance with specific privileges. As manila is a shared file system, we can use its capabilities to achieve data-sharing between multiple tenants. This can help software to run in a distributed environment ensuring that all the different instances are sharing the same data.
 
 ## 3.   Scope and Features Of The Project:
 - The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors.
