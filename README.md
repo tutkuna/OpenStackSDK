@@ -26,7 +26,7 @@ Administrators can perform read and delete actions for share servers. An adminis
 - https://wiki.openstack.org/wiki/Manila 
 
 ## 5. Acceptance criteria
-- Implement a good amount of features of the OpenStack Shared File Systems API into the OpenStack Python SDK, create strenuous unit tests for them, and push them to the github branch https://github.com/openstack/openstacksdk/tree/feature/r1/openstack/shared_file_system/v2 .
+- Implement a good (not-yet-determined) amount of features of the OpenStack Shared File Systems (Manila) API into the OpenStack Python SDK, create strenuous unit tests for them, and push them to the github branch https://github.com/openstack/openstacksdk/tree/feature/r1/openstack/shared_file_system/v2 .
 - Minimum acceptance criteria and stretch goals not yet specified by mentors.
 
 ## 6.  Release Planning:
