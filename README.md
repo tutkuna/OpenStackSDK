@@ -38,6 +38,10 @@ Users can create a share and associate it with a network, list shares, and show 
 Administrators can perform read and delete actions for share servers. An administrator can delete an active share server only if it contains no dependent shares. If an administrator deletes the share server, the Shared File Systems service creates a share server in response to a subsequent create share request.
 
 ## 4. Solution Concept
+![process image](https://github.com/tutkuna/cs6620/blob/main/Screenshot%202021-09-23%20194854.jpg)
+
+- Our end solution is an SDK for Python that contains helper methods to call the Manila API, which offers on-demand, scalable, robust, self-service access to shared file system storage resources. 
+- We will be using Python to develop the SDK, GitHub for version control, and Gerrit for maintaining the workflow.
 
 
 ## 5. Acceptance criteria
