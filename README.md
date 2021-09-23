@@ -74,11 +74,10 @@ This section discusses the implications and reasons of the design decisions made
 
 ## 5. Acceptance criteria
 - Implement a good amount of features of the OpenStack Shared File Systems API into the OpenStack Python SDK, create strenuous unit tests for them, and push them to the github branch https://github.com/openstack/openstacksdk/tree/feature/r1/openstack/shared_file_system/v2 .
-
-This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
+- Minimum acceptance criteria and stretch goals not yet specified by mentors.
 
 ## 6.  Release Planning:
-- We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner.
+- We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner. (not fully confirmet by mentors, but we will losely follow the OpenStack Yoga release cycle)
 - Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement.
 - Sprint 2: Starting work on implementing features we will have decided on in sprint 1.
 
