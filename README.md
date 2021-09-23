@@ -57,6 +57,8 @@ It should be specific enough that you can determine that e.g. feature A is in-sc
 ** **
 
 ## 4. Solution Concept
+![alt text](https://wiki.openstack.org/w/images/4/43/Shares_Service.png)
+- https://wiki.openstack.org/wiki/Manila 
 
 This section provides a high-level outline of the solution.
 
