@@ -77,7 +77,7 @@ This section discusses the implications and reasons of the design decisions made
 - Minimum acceptance criteria and stretch goals not yet specified by mentors.
 
 ## 6.  Release Planning:
-- We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner. (not fully confirmet by mentors, but we will losely follow the OpenStack Yoga release cycle)
+- We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner. (not fully confirmed yet by mentors, but we will losely follow the OpenStack Yoga release cycle)
 - Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement.
 - Sprint 2: Starting work on implementing features we will have decided on in sprint 1.
 
