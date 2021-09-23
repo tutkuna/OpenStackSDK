@@ -1,5 +1,9 @@
 #  OpenStack Manila API v2 support in OpenStackSDK
 Manila is an open source OpenStack Shared File System service that is a software that exists within the OpenStack cloud. It is a collection of microservices and other components that provide self-service management of elastic file system storage infrastructure that can allow you to work with and provision storage via 30+ storage technologies over file system protocols. It is unique in how it is able to add RESTful semantics to consuming shared storage in a reliable and scalable manner
+
+![manila](https://wiki.openstack.org/w/images/4/43/Shares_Service.png)
+
+credits: https://wiki.openstack.org/wiki/Manila
 ## 1.   Vision and Goals Of The Project:
 - Implementing features of the Manila API to the OpenStack Python SDK to be ready for the OpenStack Yoga release cycle.
 - The aim of this project is to improve usability by providing consistent usage patterns and abstractions alongside operator tools and troubleshooting aids
@@ -34,8 +38,7 @@ Users can create a share and associate it with a network, list shares, and show 
 Administrators can perform read and delete actions for share servers. An administrator can delete an active share server only if it contains no dependent shares. If an administrator deletes the share server, the Shared File Systems service creates a share server in response to a subsequent create share request.
 
 ## 4. Solution Concept
-![alt text](https://wiki.openstack.org/w/images/4/43/Shares_Service.png)
-- https://wiki.openstack.org/wiki/Manila 
+
 
 ## 5. Acceptance criteria
 - Implement a good (not-yet-determined) amount of features of the OpenStack Shared File Systems (Manila) API into the OpenStack Python SDK, create strenuous unit tests for them, and push them to the github branch https://github.com/openstack/openstacksdk/tree/feature/r1/openstack/shared_file_system/v2 .
