@@ -1,4 +1,5 @@
 #  OpenStack Manila API v2 support in OpenStackSDK
+Manila is an open source OpenStack Shared File System service that is a software that exists within the OpenStack cloud. It is a collection of microservices and other components that provide self-service management of elastic file system storage infrastructure that can allow you to work with and provision storage via 30+ storage technologies over file system protocols. It is unique in how it is able to add RESTful semantics to consuming shared storage in a reliable and scalable manner
 ## 1.   Vision and Goals Of The Project:
 - Implementing features of the Manila API to the OpenStack Python SDK to be ready for the OpenStack Yoga release cycle.
 
