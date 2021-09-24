@@ -34,7 +34,9 @@ Following are the most common personas based on the tasks done by OpenStack end 
   - **cross-tenant data sharing**: a tenant is a group of users sharing common access to a software instance with specific privileges. As manila is a shared file system, we can use its capabilities to achieve data-sharing between multiple tenants. This can help software to run in a distributed environment ensuring that all the different instances are sharing the same data. -->
 
 ## 3.   Scope and Features Of The Project:
-The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors. Some possible API Features we will be working on (descriptions copied over from API documentation):  
+The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors. 
+</br>
+Some possible API Features we will be working on (descriptions copied over from API documentation):  
 - Managing/ Unmanaging Snapshots
   - Use the Shared File Systems service to make snapshots of shares. A share snapshot is a point-in-time, read-only copy of the data that is contained in a share. The APIs below allow controlling share snapshots. They are represented by a “snapshot” resource in the Shared File Systems service, and they can have user-defined metadata such as a name and description. Users can create, manage, update, and delete share snapshots. Users can create a share from it, or can also revert a share to its most recent snapshot through OpenStack SDK.
 - Managing/ Unmanaging Shares
@@ -57,7 +59,7 @@ Administrators can perform read and delete actions for share servers. An adminis
 
 ## 6.  Release Planning:
 - We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner. (not fully confirmed yet by mentors, but we will losely follow the OpenStack Yoga release cycle)
-- Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement.
-- Sprint 2: Starting work on implementing features we will have decided on in sprint 1.
-
+- Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement. (~1 week)
+- Sprint 2: Starting work on implementing a subset of the features we will have decided on in sprint 1. (2-3 weeks)
+- Sprint 3: Next set of features. (2-3 weeks)
 
