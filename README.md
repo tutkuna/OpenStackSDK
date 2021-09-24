@@ -35,7 +35,7 @@ Following are the most common personas based on the tasks done by OpenStack end 
 
 ## 3.   Scope and Features Of The Project:
 The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors. 
-</br>
+
 Some possible API Features we will be working on (descriptions copied over from API documentation):  
 - Managing/ Unmanaging Snapshots
   - Use the Shared File Systems service to make snapshots of shares. A share snapshot is a point-in-time, read-only copy of the data that is contained in a share. The APIs below allow controlling share snapshots. They are represented by a “snapshot” resource in the Shared File Systems service, and they can have user-defined metadata such as a name and description. Users can create, manage, update, and delete share snapshots. Users can create a share from it, or can also revert a share to its most recent snapshot through OpenStack SDK.
