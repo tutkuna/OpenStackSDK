@@ -45,7 +45,7 @@ The API Features we have worked on:
   - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/79702
 - Share Replica
   - These are the replicated copies of a share which are used for syncing data and as a disaster recovery solution. The replicas depends on the type of the share and so we need to have a share type before we can create a share Replica.
- 	- Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/815765
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/815765
 - Share Instance:
   - These are the instances of the share that are stored on different locations in the shared file system. Operations on these can only be done by the administrators
   - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/814327 
@@ -61,7 +61,7 @@ The API Features we have worked on:
 - Revert Share to Snapshot
   - This is a function for share and share snapshot, the share snapshot is a point-in-time copy of a share, with this function user can revert a share to its most recent  snapshot.
 
-Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/819559
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/819559
 ## 4. Solution Concept
 ![process image](https://github.com/tutkuna/cs6620/blob/main/Screenshot%202021-09-23%20194854.jpg)
 
@@ -98,6 +98,6 @@ Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/819559
   - Working on resources, unit tests and functional tests
 - Sprint 4:
   - Continue picking and working on resources
-Sprint 5:
+- Sprint 5:
   - Finishing all tasks we picked
   - Participating in Manila Bug Squash.
