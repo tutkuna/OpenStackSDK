@@ -34,18 +34,34 @@ Following are the most common personas based on the tasks done by OpenStack end 
   - **cross-tenant data sharing**: a tenant is a group of users sharing common access to a software instance with specific privileges. As manila is a shared file system, we can use its capabilities to achieve data-sharing between multiple tenants. This can help software to run in a distributed environment ensuring that all the different instances are sharing the same data. -->
 
 ## 3.   Scope and Features Of The Project:
-The features of the OpenStack Shared File System API all fall within the scope of this project. Though the individual features we will be working on have not been decided yet by the mentors. 
+The features of the OpenStack Shared File System API all fall within the scope of this project, but we have taken on resources as prioritized by our mentors and managed to implement 8 of them.
 
-Some possible API Features we will be working on (descriptions copied over from API documentation):  
-- Managing/ Unmanaging Snapshots
-  - Use the Shared File Systems service to make snapshots of shares. A share snapshot is a point-in-time, read-only copy of the data that is contained in a share. The APIs below allow controlling share snapshots. They are represented by a “snapshot” resource in the Shared File Systems service, and they can have user-defined metadata such as a name and description. Users can create, manage, update, and delete share snapshots. Users can create a share from it, or can also revert a share to its most recent snapshot through OpenStack SDK.
-- Managing/ Unmanaging Shares
-  - A share is a remote, mountable file system. In the APIs below, a share resource is a representation of this remote file system within the Shared File Systems service. This resource representation includes useful metadata, communicating the characteristics of the remote file system as determined by the user and the Shared File Systems service.
-Users can create a share and associate it with a network, list shares, and show information for, update, and delete a share through OpenStack SDK.
-- Managing/ Unmanaging Shares Servers
-  - A share server is created by multi-tenant back-end drivers where shares are hosted. For example, with the generic driver, shares are hosted on Compute VMs.
-Administrators can perform read and delete actions for share servers. An administrator can delete an active share server only if it contains no dependent shares. If an administrator deletes the share server, the Shared File Systems service creates a share server in response to a subsequent create share request.
+The API Features we have worked on:  
+* Share Instance Export Location
+  * Export locations are the file path where we can find a particular resource. This resource will list and give details about the export locations for the share instances
+  * Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/814326
+* Share Type
+  * This resource creates a share type that can be used while creating a share replica. There are three types of share types: Readable, writable and Disaster recovery
+  * Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/79702
+- Share Replica
+  - These are the replicated copies of a share which are used for syncing data and as a disaster recovery solution. The replicas depends on the type of the share and so we need to have a share type before we can create a share Replica.
+ 	- Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/815765
+- Share Instance:
+  - These are the instances of the share that are stored on different locations in the shared file system. Operations on these can only be done by the administrators
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/814327 
+- Share Replica Export Location 
+  -  Like explained earlier, this resource allows users to list and get details about the export locations for a given share replica. Again, export locations are the file path where we can find the share replica once it is exported
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/818014 
+- Share Group Type 
+  - A share group type enables users to filter or choose back ends before they create a share group. It can be either private or public. By default it is public.  I basically implemented the group specs functionality corresponding to the before mentioned group capabilities.
+  - Functional Tests pending.
+- Share Group Snapshot
+  -  is a point-in-time, read-only copy of the data that is contained in a share group.
+  - Patch Link:  https://review.opendev.org/c/openstack/openstacksdk/+/817891
+- Revert Share to Snapshot
+  - This is a function for share and share snapshot, the share snapshot is a point-in-time copy of a share, with this function user can revert a share to its most recent  snapshot.
 
+Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/819559
 ## 4. Solution Concept
 ![process image](https://github.com/tutkuna/cs6620/blob/main/Screenshot%202021-09-23%20194854.jpg)
 
@@ -54,12 +70,16 @@ Administrators can perform read and delete actions for share servers. An adminis
 
 
 ## 5. Acceptance criteria
-- Implement a good (not-yet-determined) amount of features of the OpenStack Shared File Systems (Manila) API into the OpenStack Python SDK, create strenuous unit tests for them, and push them to the github branch https://github.com/openstack/openstacksdk/tree/feature/r1/openstack/shared_file_system/v2 .
-- Minimum acceptance criteria and stretch goals not yet specified by mentors.
+- Implement a good amount of features of the OpenStack Shared File Systems (Manila) API into the OpenStack Python SDK, create strenuous unit and functional tests for them, and push them to the gerrit page https://review.opendev.org/q/project:openstack%252Fopenstacksdk as patches for review.
+- Stretch goals would be getting our patches reviewed, all review feedback handled, and the patches merged to the release code.
+
 
 ## 6.  Release Planning:
-- We will be implementing individual API features including tests for all features we implement and releasing features into the github branch individually in a weekly/bi-weekly manner. (not fully confirmed yet by mentors, but we will losely follow the OpenStack Yoga release cycle)
+- We will be working on implementing individual API features including tests for all features we implement and publishing our patches to the gerrit page individually in a bi-weekly manner. 
 - Sprint 1: Signing up for the accounts necessary to contribute to OpenStack. Keeping in touch with the mentors. Figuring out the first steps we will be taking, the features we will implement. (~1 week)
-- Sprint 2: Starting work on implementing a subset of the features we will have decided on in sprint 1. (2-3 weeks)
-- Sprint 3: Next set of features. (2-3 weeks)
+- Sprint 2: Starting work on implementing share instances, share instance export locations, and share group snapshots. (2 weeks)
+- Sprint 3: Finish up testing for share instances, continue working on share group snapshots. Start implementing share group types and share replicas. (2 weeks)
+- Sprint 4: Start implementing share replica export locations. Continue with share group types, finish up share group snapshots. Fix share types (previous contributor’s patch) (2 weeks)
+- Sprint 5: Participate in Manila Bugsquash. Address mentors’ feedback on share instances patch to get it ready for merging. Still finishing up functional tests for share group types. Adding tests for share replica. (2 weeks)
+
 
