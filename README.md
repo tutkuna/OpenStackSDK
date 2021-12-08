@@ -1,4 +1,6 @@
 #  OpenStack Manila API v2 support in OpenStackSDK
+Final presentation [video](https://youtu.be/pM4ilX9kjIo)
+
 Manila is an open source OpenStack Shared File System service that is a software that exists within the OpenStack cloud. It is a collection of microservices and other components that provide self-service management of elastic file system storage infrastructure that can allow you to work with and provision storage via 30+ storage technologies over file system protocols. It is unique in how it is able to add RESTful semantics to consuming shared storage in a reliable and scalable manner
 
 ![manila](https://wiki.openstack.org/w/images/4/43/Shares_Service.png)
