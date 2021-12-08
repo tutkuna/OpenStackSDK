@@ -37,12 +37,12 @@ Following are the most common personas based on the tasks done by OpenStack end 
 The features of the OpenStack Shared File System API all fall within the scope of this project, but we have taken on resources as prioritized by our mentors and managed to implement 8 of them.
 
 The API Features we have worked on:  
-* Share Instance Export Location
-  * Export locations are the file path where we can find a particular resource. This resource will list and give details about the export locations for the share instances
-  * Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/814326
-* Share Type
-  * This resource creates a share type that can be used while creating a share replica. There are three types of share types: Readable, writable and Disaster recovery
-  * Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/79702
+- Share Instance Export Location
+  - Export locations are the file path where we can find a particular resource. This resource will list and give details about the export locations for the share instances
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/814326
+- Share Type
+  - This resource creates a share type that can be used while creating a share replica. There are three types of share types: Readable, writable and Disaster recovery
+  - Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/79702
 - Share Replica
   - These are the replicated copies of a share which are used for syncing data and as a disaster recovery solution. The replicas depends on the type of the share and so we need to have a share type before we can create a share Replica.
  	- Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/815765
