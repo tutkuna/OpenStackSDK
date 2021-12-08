@@ -83,3 +83,21 @@ Patch Link: https://review.opendev.org/c/openstack/openstacksdk/+/819559
 - Sprint 5: Participate in Manila Bugsquash. Address mentors’ feedback on share instances patch to get it ready for merging. Still finishing up functional tests for share group types. Adding tests for share replica. (2 weeks)
 
 
+## 7. Full-Semester Burndown Chart:
+![chart](https://github.com/tutkuna/cs6620/blob/07a6f1f88608955109cfa0ba620b48ea328d8064/Full-Semester%20Burndown%20Chart.png)
+- Sprint 1
+  - Getting familiar with openstack manila
+  - Setting up servers on MOC
+  - Setting up devstack
+  - Setting up IRC
+- Sprint 2
+  - Setting up jump host
+  - Picking up resources
+  - Getting familiar with Gerrit
+- Sprint 3:
+  - Working on resources, unit tests and functional tests
+- Sprint 4:
+  - Continue picking and working on resources
+Sprint 5:
+  - Finishing all tasks we picked
+  - Participating in Manila Bug Squash.
